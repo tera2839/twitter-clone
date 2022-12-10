@@ -25,3 +25,15 @@
 .sidebarOption--active {
   color: var(--twitter-color);
 }
+
+@media screen and (max-width: 1300px){
+  .sidebarOption > h2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .sidebarOption > .MuiSvgIcon-root {
+    padding-right: 0;
+  }
+}

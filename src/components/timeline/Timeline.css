@@ -21,3 +21,15 @@
   font-size: 20px;
   font-weight: 800;
 }
+
+@media screen and (max-width: 1030px){
+  .timeline {
+    flex: 0.78;
+  }  
+}
+
+@media screen and (max-width: 440px) {
+  .timeline {
+    flex: 0.9;
+  }
+}
