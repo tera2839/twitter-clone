@@ -43,6 +43,7 @@
     margin-bottom: 5px;
   }
   .sidebar {
-   flex: 0.1 !important;
+   flex: 0.1;
+   position: none;
   }
 }

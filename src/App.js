@@ -1,14 +1,16 @@
 import './App.css';
-import Sidebar from './components/sidebar/Sidebar';
-import Timeline from './components/timeline/Timeline';
-import Widgets from './components/widget/Widgets';
+import SignIn from './components/SignIn/SignIn';
+import { auth } from './firebase';
+import TwitterMain from './TwitterMain';
+import { useAuthState } from "react-firebase-hooks/auth"
+
 
 function App() {
+  const [user] = useAuthState(auth);
+
   return (
-    <div className='app'>
-      <Sidebar />
-      <Timeline />
-      <Widgets />
+    <div>
+      {user ? <TwitterMain /> : <SignIn />}
     </div>
   );
 }

@@ -11,6 +11,7 @@ import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { Button } from '@mui/material';
 import "./Sidebar.css";
+import SignOut from '../SignIn/SignOut';
 
 
 function Sidebar() {
@@ -30,6 +31,7 @@ function Sidebar() {
       <Button variant='outlined' className="sidebar--tweet" fullWidth>
         ツイートする
       </Button>
+      <SignOut />
     </div>
   )
 }

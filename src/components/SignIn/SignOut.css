@@ -1,0 +1,22 @@
+.signout--button {
+  background-color: var(--twitter-color);
+  padding: 13px;
+  margin-top: 100px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 440px) {
+  .signout--button {
+    position: absolute;
+    top: 500px;
+    z-index: 300;
+  }
+  .signout--button span {
+    display: block;
+  }
+}
